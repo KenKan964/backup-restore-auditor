@@ -1,0 +1,26 @@
+{
+  "manifest_version": 1,
+  "method": "sqlite_backup_api",
+  "snapshot_at": "2026-11-14T12:06:46.096942+00:00",
+  "schema": {
+    "table:orders": "CREATE TABLE orders(id TEXT PRIMARY KEY, person TEXT REFERENCES people(id))",
+    "table:people": "CREATE TABLE people(id TEXT PRIMARY KEY, name TEXT, data BLOB)"
+  },
+  "tables": {
+    "orders": {
+      "key": "id",
+      "count": 1,
+      "records": {
+        "[\"str\",\"o\"]": "7ba8473429b512b9074c75dadfc26170cdd0f2a6831e723964172c24390f147a"
+      }
+    },
+    "people": {
+      "key": "id",
+      "count": 2,
+      "records": {
+        "[\"str\",\"0\"]": "49c9cac98046b85196c3aaf163f852dacad7db36e05c8d13bda9b16724de42b5",
+        "[\"str\",\"1\"]": "0bb7c2d809d45a53bd2f930df4274a38e412662172a627e27e312bf63c247215"
+      }
+    }
+  }
+}
