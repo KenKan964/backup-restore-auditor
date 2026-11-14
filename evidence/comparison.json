@@ -1,0 +1,236 @@
+{
+  "records": [
+    {
+      "case": "normal",
+      "mode": "baseline",
+      "expected_accept": true,
+      "accepted": true,
+      "contract_matched": true,
+      "seconds": 0.00035829699999112563,
+      "evidence": {
+        "accepted": true,
+        "checks": {
+          "integrity": true,
+          "foreign_keys": true,
+          "people_count": true,
+          "important_key": true
+        }
+      }
+    },
+    {
+      "case": "normal",
+      "mode": "bra",
+      "expected_accept": true,
+      "accepted": true,
+      "contract_matched": true,
+      "seconds": 0.0009249969999984842,
+      "evidence": {
+        "schema_version": "bra-report-v1",
+        "tool_version": "0.1.0",
+        "status": "MATCH",
+        "exit_code": 0,
+        "findings": [],
+        "manifest_trust": "CALLER_SUPPLIED_NOT_EXTERNALLY_AUTHENTICATED",
+        "scope": "Snapshot only; no latest-state, disaster recovery, RPO/RTO or external-effects guarantee.",
+        "backup_sha256_before": "1546384b392caf7b71b38e44cde633475316397f026c8050b8206656c79a900a",
+        "manifest_sha256": "894e2d0dede60319b130c2003bd79e35e0d02321f3c49f3d7c133660f6c85d0b",
+        "snapshot_at": "2026-11-14T12:06:46.047043+00:00",
+        "restore_id": "run0",
+        "integrity_check": [
+          "ok"
+        ],
+        "foreign_key_check": [],
+        "backup_sha256_after": "1546384b392caf7b71b38e44cde633475316397f026c8050b8206656c79a900a"
+      }
+    },
+    {
+      "case": "missing",
+      "mode": "baseline",
+      "expected_accept": false,
+      "accepted": false,
+      "contract_matched": true,
+      "seconds": 0.0002200799999911851,
+      "evidence": {
+        "accepted": false,
+        "checks": {
+          "integrity": true,
+          "foreign_keys": true,
+          "people_count": false,
+          "important_key": true
+        }
+      }
+    },
+    {
+      "case": "missing",
+      "mode": "bra",
+      "expected_accept": false,
+      "accepted": false,
+      "contract_matched": true,
+      "seconds": 0.0006899349999969218,
+      "evidence": {
+        "schema_version": "bra-report-v1",
+        "tool_version": "0.1.0",
+        "status": "VIOLATION",
+        "exit_code": 1,
+        "findings": [
+          {
+            "code": "CONTENT_MISMATCH",
+            "table": "people",
+            "expected_count": 2,
+            "actual_count": 1,
+            "missing_keys": [
+              "[\"str\",\"1\"]"
+            ],
+            "changed_keys": [],
+            "added_keys": []
+          }
+        ],
+        "manifest_trust": "CALLER_SUPPLIED_NOT_EXTERNALLY_AUTHENTICATED",
+        "scope": "Snapshot only; no latest-state, disaster recovery, RPO/RTO or external-effects guarantee.",
+        "backup_sha256_before": "933197ec3c0cd139f6a67af99d88a05348f8b753feeb5b10f8631f60752f68aa",
+        "manifest_sha256": "894e2d0dede60319b130c2003bd79e35e0d02321f3c49f3d7c133660f6c85d0b",
+        "snapshot_at": "2026-11-14T12:06:46.047043+00:00",
+        "restore_id": "run1",
+        "integrity_check": [
+          "ok"
+        ],
+        "foreign_key_check": [],
+        "backup_sha256_after": "933197ec3c0cd139f6a67af99d88a05348f8b753feeb5b10f8631f60752f68aa"
+      }
+    },
+    {
+      "case": "value",
+      "mode": "baseline",
+      "expected_accept": false,
+      "accepted": true,
+      "contract_matched": false,
+      "seconds": 0.00018577800000230127,
+      "evidence": {
+        "accepted": true,
+        "checks": {
+          "integrity": true,
+          "foreign_keys": true,
+          "people_count": true,
+          "important_key": true
+        }
+      }
+    },
+    {
+      "case": "value",
+      "mode": "bra",
+      "expected_accept": false,
+      "accepted": false,
+      "contract_matched": true,
+      "seconds": 0.0006306760000143186,
+      "evidence": {
+        "schema_version": "bra-report-v1",
+        "tool_version": "0.1.0",
+        "status": "VIOLATION",
+        "exit_code": 1,
+        "findings": [
+          {
+            "code": "CONTENT_MISMATCH",
+            "table": "people",
+            "expected_count": 2,
+            "actual_count": 2,
+            "missing_keys": [],
+            "changed_keys": [
+              "[\"str\",\"1\"]"
+            ],
+            "added_keys": []
+          }
+        ],
+        "manifest_trust": "CALLER_SUPPLIED_NOT_EXTERNALLY_AUTHENTICATED",
+        "scope": "Snapshot only; no latest-state, disaster recovery, RPO/RTO or external-effects guarantee.",
+        "backup_sha256_before": "afd1c9d557cb28a4770048167f257e5d8ed9d8340e6f783d68a391681d56abf3",
+        "manifest_sha256": "894e2d0dede60319b130c2003bd79e35e0d02321f3c49f3d7c133660f6c85d0b",
+        "snapshot_at": "2026-11-14T12:06:46.047043+00:00",
+        "restore_id": "run2",
+        "integrity_check": [
+          "ok"
+        ],
+        "foreign_key_check": [],
+        "backup_sha256_after": "afd1c9d557cb28a4770048167f257e5d8ed9d8340e6f783d68a391681d56abf3"
+      }
+    },
+    {
+      "case": "orphan",
+      "mode": "baseline",
+      "expected_accept": false,
+      "accepted": false,
+      "contract_matched": true,
+      "seconds": 0.0001832150000211641,
+      "evidence": {
+        "accepted": false,
+        "checks": {
+          "integrity": true,
+          "foreign_keys": false,
+          "people_count": true,
+          "important_key": true
+        }
+      }
+    },
+    {
+      "case": "orphan",
+      "mode": "bra",
+      "expected_accept": false,
+      "accepted": false,
+      "contract_matched": true,
+      "seconds": 0.0012297650000050453,
+      "evidence": {
+        "schema_version": "bra-report-v1",
+        "tool_version": "0.1.0",
+        "status": "VIOLATION",
+        "exit_code": 1,
+        "findings": [
+          {
+            "code": "FOREIGN_KEY_VIOLATION",
+            "rows": [
+              [
+                "orders",
+                1,
+                "people",
+                0
+              ]
+            ]
+          },
+          {
+            "code": "CONTENT_MISMATCH",
+            "table": "orders",
+            "expected_count": 1,
+            "actual_count": 1,
+            "missing_keys": [],
+            "changed_keys": [
+              "[\"str\",\"o\"]"
+            ],
+            "added_keys": []
+          }
+        ],
+        "manifest_trust": "CALLER_SUPPLIED_NOT_EXTERNALLY_AUTHENTICATED",
+        "scope": "Snapshot only; no latest-state, disaster recovery, RPO/RTO or external-effects guarantee.",
+        "backup_sha256_before": "0bbf0681691ccc8feb5b20bc0d78ead329444718ba8656c57f99b498a9cc5fcf",
+        "manifest_sha256": "894e2d0dede60319b130c2003bd79e35e0d02321f3c49f3d7c133660f6c85d0b",
+        "snapshot_at": "2026-11-14T12:06:46.047043+00:00",
+        "restore_id": "run3",
+        "integrity_check": [
+          "ok"
+        ],
+        "foreign_key_check": [
+          [
+            "orders",
+            1,
+            "people",
+            0
+          ]
+        ],
+        "backup_sha256_after": "0bbf0681691ccc8feb5b20bc0d78ead329444718ba8656c57f99b498a9cc5fcf"
+      }
+    }
+  ],
+  "human_work_seconds": null,
+  "limits": "Baseline includes restoration, integrity, FK, count and important-key checks. BRA additionally compares all manifest record hashes. Shared Backup API permitted; memory versus disk/evidence overhead prohibits speed superiority claim.",
+  "source_lines": {
+    "bra.py": 117,
+    "compare.py": 24
+  }
+}

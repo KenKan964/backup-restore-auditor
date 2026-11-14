@@ -1,0 +1,42 @@
+test_bad_count (test_acceptance.Acceptance.test_bad_count) ... ok
+test_bad_key (test_acceptance.Acceptance.test_bad_key) ... ok
+test_bad_version (test_acceptance.Acceptance.test_bad_version) ... ok
+test_basic (test_acceptance.Acceptance.test_basic) ... ok
+test_blob (test_acceptance.Acceptance.test_blob) ... ok
+test_corrupt (test_acceptance.Acceptance.test_corrupt) ... ok
+test_duplicate_json (test_acceptance.Acceptance.test_duplicate_json) ... ok
+test_empty_db (test_acceptance.Acceptance.test_empty_db) ... ok
+test_existing (test_acceptance.Acceptance.test_existing) ... ok
+test_extra_row (test_acceptance.Acceptance.test_extra_row) ... ok
+test_fake (test_acceptance.Acceptance.test_fake) ... ok
+test_hashmatch (test_acceptance.Acceptance.test_hashmatch) ... ok
+test_many (test_acceptance.Acceptance.test_many) ... ok
+test_missing_manifest (test_acceptance.Acceptance.test_missing_manifest) ... ok
+test_missing_parent (test_acceptance.Acceptance.test_missing_parent) ... ok
+test_missing_row (test_acceptance.Acceptance.test_missing_row) ... ok
+test_missing_table (test_acceptance.Acceptance.test_missing_table) ... ok
+test_multiple (test_acceptance.Acceptance.test_multiple) ... ok
+test_no_manifest_table (test_acceptance.Acceptance.test_no_manifest_table) ... ok
+test_orphan (test_acceptance.Acceptance.test_orphan) ... ok
+test_simple_wal_copy (test_acceptance.Acceptance.test_simple_wal_copy) ... ok
+test_symlink (test_acceptance.Acceptance.test_symlink) ... ok
+test_tamper (test_acceptance.Acceptance.test_tamper) ... ok
+test_unicode (test_acceptance.Acceptance.test_unicode) ... ok
+test_unknown_time (test_acceptance.Acceptance.test_unknown_time) ... ok
+test_wal_live (test_acceptance.Acceptance.test_wal_live) ... ok
+test_wrong_schema (test_acceptance.Acceptance.test_wrong_schema) ... ok
+test_zero_file (test_acceptance.Acceptance.test_zero_file) ... ok
+test_directory_symlink (test_fix01.Fix01.test_directory_symlink) ... ok
+test_existing (test_fix01.Fix01.test_existing) ... ok
+test_file_symlink (test_fix01.Fix01.test_file_symlink) ... ok
+test_repeated_fixture_handles (test_fix01.Fix01.test_repeated_fixture_handles) ... ok
+test_time_invalid (test_fix01.Fix01.test_time_invalid) ... ok
+test_time_naive (test_fix01.Fix01.test_time_naive) ... ok
+test_time_negative (test_fix01.Fix01.test_time_negative) ... ok
+test_time_positive (test_fix01.Fix01.test_time_positive) ... ok
+test_time_z (test_fix01.Fix01.test_time_z) ... ok
+
+----------------------------------------------------------------------
+Ran 37 tests in 0.537s
+
+OK

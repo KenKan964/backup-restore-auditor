@@ -1,0 +1,17 @@
+[
+  {
+    "case": "normal",
+    "exit_code": 0,
+    "status": "MATCH"
+  },
+  {
+    "case": "tamper",
+    "exit_code": 1,
+    "status": "VIOLATION"
+  },
+  {
+    "case": "insufficient",
+    "exit_code": 2,
+    "status": "UNVERIFIABLE"
+  }
+]
