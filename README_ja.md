@@ -136,4 +136,4 @@ python compare.py > comparison-local.json
 
 [English README](README.md) · [Manifest形式](MANIFEST_FORMAT.md) · [技術仕様書](TECHNICAL_SPEC.md) · [セキュリティ](SECURITY.md) · [比較実験](OSS_COMPARISON.md) · [FIX-01変更記録](FIX01_CHANGES.md) · [是正報告書](REPORT_ja.md) · [変更履歴](CHANGELOG.md) · [MITライセンス](LICENSE)
 
-**ライセンス：** MIT。著作権名義は[LICENSE](LICENSE)の記載に従います。一般公開前に権利関係を確認してください。
+**ライセンス：** MIT · Copyright (c) 2026 KenKan964。[LICENSE](LICENSE)を参照してください。
