@@ -136,4 +136,4 @@ The resource verification runner performs the tests, three additional fixture ge
 
 [日本語 README](README_ja.md) · [Manifest v1 format](MANIFEST_FORMAT.md) · [Technical specification](TECHNICAL_SPEC.md) · [Security](SECURITY.md) · [Comparison and limits](OSS_COMPARISON.md) · [FIX-01 changes](FIX01_CHANGES.md) · [Verification report (Japanese)](REPORT_ja.md) · [Change history](CHANGELOG.md) · [MIT License](LICENSE)
 
-**License:** MIT. Copyright attribution is as shown in [LICENSE](LICENSE); the publisher must verify it before public release.
+**License:** MIT · Copyright (c) 2026 KenKan964. See [LICENSE](LICENSE).
